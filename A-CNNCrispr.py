@@ -98,7 +98,7 @@ def main():
     y_test = y_test.reshape(len(y_test), -1)
 
     print("Predicting on test data")
-    result_file = "result/result.csv"
+    result_file = "result/A-CNNCrispr_result.csv"
     y_test = pd.DataFrame(y_test)
     y_pred = model.predict([x_test], batch_size=256, verbose=2)
     y_pred = pd.DataFrame(y_pred)
