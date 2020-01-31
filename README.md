@@ -51,6 +51,5 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
 
 
 ## Reference
-[1] Lorenz, R., Bernhart, S.H., Siederdissen, C.H.Z., Tafer, H., Flamm, C., Stadler, P.F., Hofacker, I.L.: Viennarna package 2.0. 
-    Algorithms for Molecular Biology 6, 26 (2011)
+[1] Lorenz, R., et al. (2011) ViennaRNA Package 2.0, Algorithms for molecular biology: AMB, 6, 26.
 
