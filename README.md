@@ -35,14 +35,18 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
 * **./weights/A_CNNCrispr_weights.h5:** The well-trained weights for our A-CNNCrispr model
 * **./weights/A-CNNCrispr_Bio_weights.h5:** The well-trained weights for our A-CNNCrispr+Bio model
 * **./A-CNNCrispr.py:** The python code of A-CNNCrispr model, it can be ran to reproduce our results
-* **./A-CNNCrispr_Bio.py:** The python code of A-CNNCrispr+Bio model, it can be ran to reproduce our results 
+* **./A-CNNCrispr_Bio.py:** The python code of A-CNNCrispr+Bio model, it can be ran to reproduce our results
+* **./result/A-CNNCrispr_result.csv:** The prediction results of A-CNNCrispr model
+* **./result/A-CNNCrispr_Bio_result.csv:** The prediction results of A-CNNCrispr+Bio model
+#### **Note:**    
+The test_data.csv can replaced or modified to include sgRNA sequence and two biological features including minimum free energy (MFE) and melting temperature of seed sequence (Tm) of interest
 
 ## Usage
+## Testing A-CNNCrispr with test set
 #### **python A-CNNCrispr.py** 
+## Testing A-CNNCrispr_Bio with test set
 #### **python A-CNNCrispr_Bio.py**
-**Note:**  
-* The input testing files should include sgRNA sequence with length of 23 bp, two corresponding biological features and label in each sgRNA sequence.    
-* The test_data.csv can be replaced or modified to include sgRNA sequence and two biological features of interest  
+
 
 
 
