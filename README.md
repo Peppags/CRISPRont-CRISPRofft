@@ -40,11 +40,8 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
 * **./result/A-CNNCrispr_Bio_result.csv:** The prediction results of A-CNNCrispr+Bio model
 
 #### **Note:**    
-* The test_data.csv can replaced or modified to include sgRNA sequence and two biological features including minimum free energy (MFE)  
-  and melting temperature of seed sequence (Tm) of interest
-* [ViennaRNA-2.4.11](https://www.tbi.univie.ac.at/RNA/) ViennaRNA is widely used for the prediction and comparison of RNA secondary  
-  structures. (Downloadget ViennaRNA-2.4.11 from https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/ViennaRNA-2.4.11.tar.gz) 
-  [1].
+* The test_data.csv can replaced or modified to include sgRNA sequence and two biological features including minimum free energy (MFE) and melting temperature of seed sequence (Tm) of interest
+* [ViennaRNA-2.4.11](https://www.tbi.univie.ac.at/RNA/) ViennaRNA is widely used for the prediction and comparison of RNA secondary structures. (Downloadget ViennaRNA-2.4.11 from https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/ViennaRNA-2.4.11.tar.gz) [1].
 
 ## Usage
 ## Testing A-CNNCrispr with test set
