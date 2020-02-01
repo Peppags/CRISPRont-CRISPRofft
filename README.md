@@ -1,7 +1,7 @@
 # A-CNNCrispr
 
 ## Overview
-A-CNNCrispr is an attention-based convolution neural networks (CNN) framework to accurately predict the CRISPR/Cas9 sgRNA on-target activity. By integrating the convolutional neural network with attention mechanism, A-CNNCrispr is able to extract interpretable patterns that can provide useful and detailed insights into the sgRNA cleavage efficacy.
+A-CNNCrispr is an attention-based convolution neural networks (CNN) framework to accurately predict the CRISPR/Cas9 sgRNA on-target activity. By integrating the CNN with attention mechanism, A-CNNCrispr is able to extract interpretable patterns that can provide useful and detailed insights into the sgRNA cleavage efficacy.
 
 ## Pre-requisite:  
 * **Ubuntu 16.04**
