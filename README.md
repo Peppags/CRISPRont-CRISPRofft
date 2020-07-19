@@ -31,7 +31,7 @@ Download CUDA tarball on https://developer.nvidia.com/compute/cuda/8.0/Prod2/loc
 Download cuDNN tarball on https://developer.nvidia.com/cudnn  
  
 ## Content
-* **./data/test_data.csv:** The testing examples with sgRNA sequence and corresponding biological features and label indicating the on-target cleavage efficacy  
+* **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
 * **./weights/weights.h5:** The well-trained weights for our A-CNNCrispr model
 * **./A-CNNCrispr.py:** The python code of A-CNNCrispr model, it can be ran to reproduce our results
 * **./result/result.csv:** The prediction results of A-CNNCrispr model
