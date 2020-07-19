@@ -32,24 +32,12 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
  
 ## Content
 * **./data/test_data.csv:** The testing examples with sgRNA sequence and corresponding biological features and label indicating the on-target cleavage efficacy  
-* **./weights/A_CNNCrispr_weights.h5:** The well-trained weights for our A-CNNCrispr model
-* **./weights/A-CNNCrispr_Bio_weights.h5:** The well-trained weights for our A-CNNCrispr+Bio model
+* **./weights/weights.h5:** The well-trained weights for our A-CNNCrispr model
 * **./A-CNNCrispr.py:** The python code of A-CNNCrispr model, it can be ran to reproduce our results
-* **./A-CNNCrispr_Bio.py:** The python code of A-CNNCrispr+Bio model, it can be ran to reproduce our results
-* **./result/A-CNNCrispr_result.csv:** The prediction results of A-CNNCrispr model
-* **./result/A-CNNCrispr_Bio_result.csv:** The prediction results of A-CNNCrispr+Bio model
-
-#### **Note:**    
-* The test_data.csv can replaced or modified to include sgRNA sequence and two biological features including minimum free energy (MFE) and melting temperature of seed sequence (Tm) of interest.
-* [ViennaRNA-2.4.11](https://www.tbi.univie.ac.at/RNA/) ViennaRNA is widely used for the prediction and comparison of RNA secondary structures. (Downloadget ViennaRNA-2.4.11 from https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/ViennaRNA-2.4.11.tar.gz) [1].
+* **./result/result.csv:** The prediction results of A-CNNCrispr model
 
 ## Usage
 ## Testing A-CNNCrispr with test set
 #### **python A-CNNCrispr.py** 
-## Testing A-CNNCrispr_Bio with test set
-#### **python A-CNNCrispr_Bio.py**
 
-
-## Reference
-[1] Lorenz, R., et al. (2011) ViennaRNA Package 2.0, Algorithms for molecular biology: AMB, 6, 26.
 
