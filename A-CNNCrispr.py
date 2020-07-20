@@ -61,9 +61,9 @@ def main():
 
     conv2 = Conv1D(256, 5, activation='relu', name="conv2")(pool1)
 
-    conv11 = Conv1D(256, 5, activation='relu', name="conv11")(drop1)
+    conv3 = Conv1D(256, 5, activation='relu', name="conv3")(drop1)
 
-    x = Lambda(lambda x: attention(x[0], x[1], 6))([conv11, conv2])
+    x = Lambda(lambda x: attention(x[0], x[1], 6))([conv3, conv2])
 
     my_concat = Lambda(lambda x: K.concatenate([x[0], x[1]], axis=1))
     weight_1 = Lambda(lambda x: x * 0.2)
