@@ -1,7 +1,7 @@
-# A-CNNCrispr
+# CRISPR-ONT & CRISPR-OFFT
 
 ## Overview
-A-CNNCrispr is an attention-based convolution neural networks (CNN) framework to accurately predict the CRISPR/Cas9 sgRNA on-target activity. By integrating the CNN with attention mechanism, A-CNNCrispr is able to extract interpretable patterns that can provide useful and detailed insights into the sgRNA cleavage efficacy.
+CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNN) frameworks to accurately predict the CRISPR/Cas9 sgRNA on- and off-target activities, respectively. By integrating the CNNs with attention mechanism, both CRISPR-ONT and CRISPR-OFFT are able to capture the intrinsic characteristics of Cas9-sgRNA binding and cleavage, thus improving the accuracy and interpretability.
 
 ## Pre-requisite:  
 * **Ubuntu 16.04**
@@ -32,12 +32,12 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
  
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
-* **./weights/weights.h5:** The well-trained weights for our A-CNNCrispr model
-* **./A-CNNCrispr.py:** The python code of A-CNNCrispr model, it can be ran to reproduce our results
+* **./weights/CRISPR-ONT.h5:** The well-trained weights for our CRISPR-ONT model
+* **./CRISPR-ONT.py:** The python code of CRISPR-ONT model, it can be ran to reproduce our results
 * **./result/result.csv:** The prediction results of A-CNNCrispr model
 
 ## Usage
-## Testing A-CNNCrispr with test set
-#### **python A-CNNCrispr.py** 
+## Testing CRISPR-ONT with test set
+#### **python CRISPR-ONT.py** 
 
 
