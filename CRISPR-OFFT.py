@@ -57,7 +57,7 @@ EMBED_SIZE = 90
 BATCH_SIZE = 256
 MAXLEN = 23
 
-negative, positive, label = loadData('data/off-target_test.txt')
+negative, positive, label = loadData('data/test_off-target.txt')
 
 positive, negative = np.array(positive), np.array(negative)
 
