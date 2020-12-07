@@ -40,4 +40,5 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
 ## Testing CRISPR-ONT with test set
 #### **python CRISPR-ONT.py** 
 
-
+## Testing CRISPR-OFFT with test set
+#### **python CRISPR-OFFT.py** 
