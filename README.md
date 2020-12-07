@@ -34,6 +34,7 @@ Download cuDNN tarball on https://developer.nvidia.com/cudnn
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
 * **./weights/CRISPR-ONT.h5:** The well-trained weights for our CRISPR-ONT model
 * **./CRISPR-ONT.py:** The python code of CRISPR-ONT model, it can be ran to reproduce our results
+* **./CRISPR-OFFT.py:** The python code of CRISPR-OFFT model, it can be ran to reproduce our results
 * **./result/result.csv:** The prediction results of A-CNNCrispr model
 
 ## Usage
