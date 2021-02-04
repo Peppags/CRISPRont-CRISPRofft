@@ -7,11 +7,11 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 * **Ubuntu 16.04 or later**
 * **Anaconda 3-5.2.0**
 * **Python packages:**   
-  [numpy](https://numpy.org/) 1.16.4  
-  [pandas](https://pandas.pydata.org/) 0.23.0  
-  [scikit-learn](https://scikit-learn.org/stable/) 0.19.1  
-  [scipy](https://www.scipy.org/) 1.1.0  
- * **[Keras](https://keras.io/) 2.1.0**    
+  [numpy](https://numpy.org/) 
+  [pandas](https://pandas.pydata.org/) 
+  [scikit-learn](https://scikit-learn.org/stable/)  
+  [scipy](https://www.scipy.org/)  
+ * **[Keras](https://keras.io/)**    
  * **Tensorflow and dependencies:**   
   [Tensorflow](https://tensorflow.google.cn/) 1.4.0  or later  
   CUDA 8.0 (for GPU use)    
@@ -19,9 +19,9 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
   
 ## Installation guide
 #### **Operation system**  
-Ubuntu 16.04 download from https://www.ubuntu.com/download/desktop  
+Ubuntu download from https://www.ubuntu.com/download/desktop  
 #### **Python and packages**  
-Download Anaconda 3-5.2.0 tarball on https://www.anaconda.com/distribution/#download-section  
+Download Anaconda tarball on https://www.anaconda.com/distribution/#download-section  
 #### **Tensorflow installation:**  
 pip install tensorflow-gpu==1.4.0 (for GPU use)  
 pip install tensorflow==1.4.0 (for CPU use)  
