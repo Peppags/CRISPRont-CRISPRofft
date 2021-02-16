@@ -13,20 +13,6 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
   [scipy](https://www.scipy.org/)    
  * **[Keras](https://keras.io/)**    
  * **[Tensorflow](https://tensorflow.google.cn/)**   
-   
-  
-## Installation guide
-#### **Operation system**  
-Ubuntu download from https://www.ubuntu.com/download/desktop  
-#### **Python and packages**  
-Download Anaconda tarball on https://www.anaconda.com/distribution/#download-section  
-#### **Tensorflow installation:**  
-pip install tensorflow-gpu==1.4.0 (for GPU use)  
-pip install tensorflow==1.4.0 (for CPU use)  
-#### **CUDA toolkit 8.0 (for GPU use)**     
-Download CUDA tarball on https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run  
-#### **cuDNN 6.1.10 (for GPU use)**      
-Download cuDNN tarball on https://developer.nvidia.com/cudnn  
  
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
