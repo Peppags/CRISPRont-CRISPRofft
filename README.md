@@ -26,3 +26,7 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 
 ## Testing CRISPR-OFFT with test set
 #### **python CRISPR-OFFT.py** 
+
+
+## Contact
+#### If you have any questions, feel free to E-mail me via: gszhang (at)stu.edu.cn
