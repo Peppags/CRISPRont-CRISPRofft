@@ -7,7 +7,7 @@ import keras
 from keras.initializers import RandomUniform
 from keras.layers import multiply
 from keras.layers.core import Reshape, Permute
-from keras.layers import BatchNormalization, Activation
+from keras.layers import BatchNormalization
 from keras.layers.core import Dense, Dropout, Lambda, Flatten
 from keras.layers.convolutional import Conv1D
 from keras.layers.embeddings import Embedding
@@ -72,32 +72,26 @@ def main():
     input = Input(shape=(23,))
     embedded = Embedding(VOCAB_SIZE, EMBED_SIZE, input_length=MAXLEN)(input)
 
-    conv1 = Conv1D(20, 5, name="conv1")(embedded)
-    ac1 = Activation('relu')(conv1)
-    B1 = BatchNormalization()(ac1)
+    conv1 = Conv1D(20, 5, activation='relu', name="conv1")(embedded)
+    batchnor1 = BatchNormalization()(conv1)
 
-    conv2 = Conv1D(40, 5, name="conv2")(B1)
-    ac2 = Activation('relu')(conv2)
-    B2 = BatchNormalization()(ac2)
+    conv2 = Conv1D(40, 5, activation='relu', name="conv2")(batchnor1)
+    batchnor2 = BatchNormalization()(conv2)
 
-    conv3 = Conv1D(80, 5, name="conv3")(B2)
-    ac3 = Activation('relu')(conv3)
-    B3 = BatchNormalization()(ac3)
+    conv3 = Conv1D(80, 5, activation='relu', name="conv3")(batchnor2)
+    batchnor3 = BatchNormalization()(conv3)
 
-    conv11 = Conv1D(80, 9, name="conv11")(B1)
-    x = Lambda(lambda x: attention(x[0], x[1], 11))([conv11, B3])
+    conv11 = Conv1D(80, 9, name="conv11")(batchnor1)
+    x = Lambda(lambda x: attention(x[0], x[1], 11))([conv11, batchnor3])
 
     flat = Flatten()(x)
-    dense1 = Dense(40, name="dense1")(flat)
-    ac4 = Activation('relu')(dense1)
-    drop1 = Dropout(0.2)(ac4)
+    dense1 = Dense(40, activation='relu', name="dense1")(flat)
+    drop1 = Dropout(0.2)(dense1)
 
-    dense2 = Dense(20, name="dense2")(drop1)
-    ac5 = Activation('relu')(dense2)
-    drop2 = Dropout(0.2)(ac5)
+    dense2 = Dense(20, activation='relu', name="dense2")(drop1)
+    drop2 = Dropout(0.2)(dense2)
 
-    dense3 = Dense(2, name="dense3")(drop2)
-    output = Activation('softmax')(dense3)
+    output = Dense(2, activation='softmax', name="dense3")(drop2)
 
     model = Model(inputs=[input], outputs=[output])
 
