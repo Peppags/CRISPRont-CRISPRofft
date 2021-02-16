@@ -91,7 +91,7 @@ def main():
     dense2 = Dense(20, activation='relu', name="dense2")(drop1)
     drop2 = Dropout(0.2)(dense2)
 
-    output = Dense(2, activation='softmax', name="dense3")(drop2)
+    output = Dense(2, activation='softmax', name="output")(drop2)
 
     model = Model(inputs=[input], outputs=[output])
 
