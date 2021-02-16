@@ -44,7 +44,7 @@ def attention(x, g, TIME_STEPS):
     x3 = Dense(TIME_STEPS, kernel_initializer=RandomUniform(seed=2020))(x2)
     g3 = Dense(TIME_STEPS, kernel_initializer=RandomUniform(seed=2020))(g2)
     x4 = keras.layers.add([x3, g3])
-    a = Dense(TIME_STEPS, activation='softmax', use_bias=False)(x4)
+    a = Dense(TIME_STEPS, activation="softmax", use_bias=False)(x4)
     a_probs = Permute((2, 1))(a)
     output_attention_mul = multiply([x, a_probs])
     return output_attention_mul
@@ -55,13 +55,13 @@ def main():
     input = Input(shape=(24,))
     embedded = Embedding(7, 44, input_length=24)(input)
 
-    conv1 = Conv1D(256, 5, activation='relu', name="conv1")(embedded)
+    conv1 = Conv1D(256, 5, activation="relu", name="conv1")(embedded)
     pool1 = AveragePooling1D(2)(conv1)
     drop1 = Dropout(dropout_rate)(pool1)
 
-    conv2 = Conv1D(256, 5, activation='relu', name="conv2")(pool1)
+    conv2 = Conv1D(256, 5, activation="relu", name="conv2")(pool1)
 
-    conv3 = Conv1D(256, 5, activation='relu', name="conv3")(drop1)
+    conv3 = Conv1D(256, 5, activation="relu", name="conv3")(drop1)
 
     x = Lambda(lambda x: attention(x[0], x[1], 6))([conv3, conv2])
 
@@ -76,32 +76,32 @@ def main():
     dense1 = Dense(128,
                    kernel_regularizer=regularizers.l2(1e-4),
                    bias_regularizer=regularizers.l2(1e-4),
-                   activation='relu',
+                   activation="relu",
                    name="dense1")(flat)
     drop3 = Dropout(dropout_rate)(dense1)
 
     dense2 = Dense(64,
                    kernel_regularizer=regularizers.l2(1e-4),
                    bias_regularizer=regularizers.l2(1e-4),
-                   activation='relu',
+                   activation="relu",
                    name="dense2")(drop3)
     drop4 = Dropout(dropout_rate)(dense2)
 
-    dense3 = Dense(32, activation='relu', name="dense3")(drop4)
+    dense3 = Dense(32, activation="relu", name="dense3")(drop4)
     drop5 = Dropout(dropout_rate)(dense3)
 
-    output = Dense(1, activation='linear', name="output")(drop5)
+    output = Dense(1, activation="linear", name="output")(drop5)
 
     model = Model(inputs=[input], outputs=[output])
 
     print("Loading weights for the models")
-    model.load_weights('weights/CRISPR-ONT.h5')
+    model.load_weights("weights/CRISPR-ONT.h5")
 
     test_file = "data/test_on_target.csv"
 
     print("Loading test data")
     data = pd.read_csv(test_file)
-    x_test = make_data(data['sgRNA'])
+    x_test = make_data(data["sgRNA"])
 
     print("Predicting on test data")
     y_pred = model.predict([x_test], batch_size=128, verbose=2)
