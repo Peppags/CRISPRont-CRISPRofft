@@ -58,7 +58,6 @@ BATCH_SIZE = 256
 MAXLEN = 23
 
 negative, positive, label = loadData('data/test_off-target.txt')
-
 positive, negative = np.array(positive), np.array(negative)
 
 train_positive, test_positive = train_test_split(positive, test_size=0.2, random_state=42)
@@ -83,8 +82,8 @@ def main():
 
     conv11 = Conv1D(80, 9, name="conv11")(batchnor1)
     x = Lambda(lambda x: attention(x[0], x[1], 11))([conv11, batchnor3])
-
     flat = Flatten()(x)
+    
     dense1 = Dense(40, activation='relu', name="dense1")(flat)
     drop1 = Dropout(0.2)(dense1)
 
