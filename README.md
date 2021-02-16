@@ -15,10 +15,10 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
  
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
-* **./weights/CRISPR-ONT.h5:** The well-trained weights for our CRISPR-ONT model
+* **./weights/CRISPR-ONT.h5:** The well-trained weights for CRISPR-ONT model
 * **./CRISPR-ONT.py:** The python code of CRISPR-ONT model, it can be ran to reproduce our results
 * **./CRISPR-OFFT.py:** The python code of CRISPR-OFFT model, it can be ran to reproduce our results
-* **./result/result.csv:** The prediction results of A-CNNCrispr model
+* **./result/result.csv:** The prediction results of CRISPR-ONT model
 
 ## Usage
 ## Testing CRISPR-ONT with test set
