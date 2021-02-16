@@ -30,7 +30,7 @@ def attention(x, g, TIME_STEPS):
     x3 = Dense(TIME_STEPS, kernel_initializer=RandomUniform(seed=2020))(x2)
     g3 = Dense(TIME_STEPS, kernel_initializer=RandomUniform(seed=2020))(g2)
     x4 = keras.layers.add([x3, g3])
-    a = Dense(TIME_STEPS, activation='softmax', use_bias=False)(x4)
+    a = Dense(TIME_STEPS, activation="softmax", use_bias=False)(x4)
     a_probs = Permute((2, 1))(a)
     output_attention_mul = multiply([x, a_probs])
     return output_attention_mul
@@ -57,7 +57,7 @@ EMBED_SIZE = 90
 BATCH_SIZE = 256
 MAXLEN = 23
 
-negative, positive, label = loadData('data/test_off-target.txt')
+negative, positive, label = loadData("data/test_off-target.txt")
 positive, negative = np.array(positive), np.array(negative)
 
 train_positive, test_positive = train_test_split(positive, test_size=0.2, random_state=42)
@@ -71,31 +71,31 @@ def main():
     input = Input(shape=(23,))
     embedded = Embedding(VOCAB_SIZE, EMBED_SIZE, input_length=MAXLEN)(input)
 
-    conv1 = Conv1D(20, 5, activation='relu', name="conv1")(embedded)
+    conv1 = Conv1D(20, 5, activation="relu", name="conv1")(embedded)
     batchnor1 = BatchNormalization()(conv1)
 
-    conv2 = Conv1D(40, 5, activation='relu', name="conv2")(batchnor1)
+    conv2 = Conv1D(40, 5, activation="relu", name="conv2")(batchnor1)
     batchnor2 = BatchNormalization()(conv2)
 
-    conv3 = Conv1D(80, 5, activation='relu', name="conv3")(batchnor2)
+    conv3 = Conv1D(80, 5, activation="relu", name="conv3")(batchnor2)
     batchnor3 = BatchNormalization()(conv3)
 
     conv11 = Conv1D(80, 9, name="conv11")(batchnor1)
     x = Lambda(lambda x: attention(x[0], x[1], 11))([conv11, batchnor3])
+
     flat = Flatten()(x)
-    
-    dense1 = Dense(40, activation='relu', name="dense1")(flat)
+    dense1 = Dense(40, activation="relu", name="dense1")(flat)
     drop1 = Dropout(0.2)(dense1)
 
-    dense2 = Dense(20, activation='relu', name="dense2")(drop1)
+    dense2 = Dense(20, activation="relu", name="dense2")(drop1)
     drop2 = Dropout(0.2)(dense2)
 
-    output = Dense(2, activation='softmax', name="output")(drop2)
+    output = Dense(2, activation="softmax", name="dense3")(drop2)
 
     model = Model(inputs=[input], outputs=[output])
 
     print("Loading weights for the models")
-    model.load_weights('weights/CRISPR-OFFT.h5')
+    model.load_weights("weights/CRISPR-OFFT.h5")
 
     print("Predicting on test data")
     y_pred = model.predict(xtest[:, 3:])
