@@ -16,13 +16,15 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 ## Quickstart Guide: 
 CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the light-weight prediction tool run the CRISPR-ONT_predict_simple script.
 
-The code asks for the sgRNA sequence followed by the PAM sequence.
+**Step 1:** the code asks for the sgRNA sequence followed by the PAM sequence.
 ```
 Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):  
 ACTGCATGCATCGACGCCCGGGG
 ```
-
-
+**Step 2:** the CRISPR-ONT outputs the predicted results.
+```Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:  
+0.70
+```
 
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
