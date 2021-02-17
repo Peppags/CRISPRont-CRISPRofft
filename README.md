@@ -18,8 +18,8 @@ CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair se
 
 The code asks for the sgRNA sequence followed by the PAM sequence.
 ```
-Input the sgRNA sequence followed by the PAM sequence:  
-TATGCATGCATCGACGATCGGGG
+Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):  
+ACTGCATGCATCGACGCCCGGGG
 ```
 
 
