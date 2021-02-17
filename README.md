@@ -22,7 +22,8 @@ Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):
 ACTGCATGCATCGACGCCCGGGG
 ```
 **Step 2:** the CRISPR-ONT outputs the predicted results.
-```Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:  
+```
+Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:    
 0.70
 ```
 
