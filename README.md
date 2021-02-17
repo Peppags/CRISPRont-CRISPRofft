@@ -12,7 +12,12 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
   [scikit-learn](https://scikit-learn.org/stable/)       
  * **[Keras](https://keras.io/)**    
  * **[Tensorflow](https://tensorflow.google.cn/)**   
- 
+
+## Quickstart Guide:  
+To use the light-weight prediction tool run the CRISPR-ONT_predict_simple script and follow the instruction. CRISPR-ONT pipeline conveniently works in three modes depending on what input format is available to the user. Here we detail each operating mode:
+
+
+
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
 * **./weights/CRISPR-ONT.h5:** The well-trained weights for CRISPR-ONT model
