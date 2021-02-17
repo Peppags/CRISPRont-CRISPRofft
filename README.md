@@ -26,6 +26,8 @@ ACTGCATGCATCGACGCCCGGGG
 Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:    
 0.70
 ```
+CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. 
+
 
 ## Content
 * **./data/test.csv:** The testing examples with sgRNA sequence and label indicating the on-target cleavage efficacy  
@@ -43,4 +45,4 @@ Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:
 
 
 ## Contact
-If you have any questions, feel free to E-mail me via: `gszhang(at)stu.edu.cn`
+We looking forward to receiving any bug reports and suggestions. If you have any questions, feel free to E-mail me via: `gszhang(at)stu.edu.cn`
