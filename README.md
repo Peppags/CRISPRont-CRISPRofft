@@ -17,10 +17,10 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the light-weight prediction tool run the CRISPR-ONT_predict_simple script.
 
 The code asks for the sgRNA sequence followed by the PAM sequence.
-
-Input the sgRNA sequence followed by the PAM sequence:
+```
+Input the sgRNA sequence followed by the PAM sequence:  
 TATGCATGCATCGACGATCGGGG
-
+```
 
 
 
