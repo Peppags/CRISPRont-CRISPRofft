@@ -13,8 +13,14 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
  * **[Keras](https://keras.io/)**    
  * **[Tensorflow](https://tensorflow.google.cn/)**   
 
-## Quickstart Guide:  
-To use the light-weight prediction tool run the CRISPR-ONT_predict_simple script and follow the instruction. CRISPR-ONT pipeline conveniently works in three modes depending on what input format is available to the user. Here we detail each operating mode:
+## Quickstart Guide: 
+CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the light-weight prediction tool run the CRISPR-ONT_predict_simple script.
+
+The code asks for the sgRNA sequence followed by the PAM sequence.
+
+Input the sgRNA sequence followed by the PAM sequence:
+TATGCATGCATCGACGATCGGGG
+
 
 
 
