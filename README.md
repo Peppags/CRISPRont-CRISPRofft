@@ -43,10 +43,10 @@ Predicting on test data:
 The input sequence belongs to non-off-target with possibility 1.0000
 ```
 ## Usage
-### Testing CRISPR-ONT with test set  
+#### Testing CRISPR-ONT with test set  
 * python CRISPR-ONT.py   
 
-### Testing CRISPR-OFFT with test set
+#### Testing CRISPR-OFFT with test set
 * python CRISPR-OFFT.py  
 
 
