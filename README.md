@@ -1,7 +1,7 @@
 # CRISPR-ONT & CRISPR-OFFT
 
 ## Overview
-CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs) frameworks to accurately predict CRISPR/Cas9 sgRNA on- and off-target activities, respectively. By integrating CNNs with attention mechanism, both CRISPR-ONT and CRISPR-OFFT are able to capture the intrinsic characteristics of Cas9-sgRNA binding and cleavage, thus improving the accuracy and interpretability.
+CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs) frameworks to accurately predict CRISPR/Cas9 sgRNA on- and off-target activities, respectively. By integrating CNNs with attention mechanism, both CRISPR-ONT and CRISPR-OFFT are able to capture the intrinsic characteristics of Cas9-sgRNA binding and cleavage, thus improving the accuracy and interpretability.In this repository we provide the codes neccessary to run the CRISPR-ONT and CRISPR-OFFT algorithms as well as the set of trained models for users who want to run them in the batch model.
 
 ## Dependencies:  
 * **[Ubuntu](https://www.ubuntu.com/download/desktop) 16.04 or later**
