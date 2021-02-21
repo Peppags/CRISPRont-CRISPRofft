@@ -97,7 +97,7 @@ def main():
     print("Loading weights for the models")
     model.load_weights("weights/CRISPR-ONT.h5")
 
-    test_file = "data/test_on_target.csv"
+    test_file = "data/test_ont_batch.csv"
 
     print("Loading test data")
     data = pd.read_csv(test_file)
