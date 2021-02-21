@@ -95,7 +95,7 @@ def main():
     model = Model(inputs=[input], outputs=[output])
 
     print("Loading weights for the models")
-    model.load_weights("weights/CRISPR-OFFT.h5")
+    model.load_weights("crispr_offt.h5")
 
     print("Predicting on test data")
     y_pred = model.predict(xtest[:, 3:])
