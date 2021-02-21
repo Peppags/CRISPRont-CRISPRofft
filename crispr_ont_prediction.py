@@ -101,7 +101,7 @@ if __name__ == '__main__':
     model = crispr_ont()
 
     print("Loading weights for the models")
-    model.load_weights("weights/CRISPR-ONT.h5")
+    model.load_weights("crispr_ont.h5")
 
     spacer_pam = input("\nInput the sgRNA sequence followed by the PAM sequence(23 base pair sequence):\n")
     proceed_flag = 1
