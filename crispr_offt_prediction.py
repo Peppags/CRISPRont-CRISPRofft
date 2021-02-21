@@ -111,7 +111,7 @@ if __name__ == '__main__':
         dna = pd.DataFrame(np.array(dna).reshape(-1))
         offt_data = pd.concat([sgrna, dna], axis=1)
 
-        offt_data_path = "data/offt_test.csv"
+        offt_data_path = "data/test_offt.csv"
         offt_data.to_csv(offt_data_path, index=False, sep=',', header=['sgRNA', 'DNA'])
 
         offt_data = pd.read_csv(offt_data_path)
@@ -126,7 +126,7 @@ if __name__ == '__main__':
         sgrna_list = offt_data['sgRNA'].values
         dna_list = offt_data['DNA'].values
 
-        encoded_file = "data/encoded_offt_test.txt"
+        encoded_file = "data/encoded_test_offt.txt"
         encoded_data = open(encoded_file, 'w')
         length = len(offt_data)
         for i in range(length):
