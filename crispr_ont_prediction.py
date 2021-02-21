@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     if proceed_flag == 1:
         spacer_pam = pd.DataFrame(np.array(spacer_pam).reshape(-1))
-        data_path = "data/on_target_test.csv"
+        data_path = "data/test_ont.csv"
         spacer_pam.to_csv(data_path, index=False, sep=',', header=['sgRNA'])
 
         data = pd.read_csv(data_path)
