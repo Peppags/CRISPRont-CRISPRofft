@@ -19,6 +19,8 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 * data/test_offt.csv:  
 * data/encoded_test_offt.txt:  
 * data/test_offt.csv:  
+* crispr_ont.h5: the weights for the CRISPR-ONT model  
+* crispr_offt.h5: the weights for the CRISPR-OFFT model  
 
 ## Quickstart Guide: 
 CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the light-weight prediction tool by running the `crispr_on_prediction.py` script.
