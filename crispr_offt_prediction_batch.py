@@ -57,7 +57,7 @@ EMBED_SIZE = 90
 BATCH_SIZE = 256
 MAXLEN = 23
 
-negative, positive, label = loadData("data/test_off-target.txt")
+negative, positive, label = loadData("data/test_offt_batch.txt")
 positive, negative = np.array(positive), np.array(negative)
 
 train_positive, test_positive = train_test_split(positive, test_size=0.2, random_state=42)
