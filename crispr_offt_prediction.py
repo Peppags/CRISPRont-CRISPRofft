@@ -84,7 +84,7 @@ if __name__ == '__main__':
     model = crispr_offt()
 
     print("Loading weights for the models")
-    model.load_weights("weights/CRISPR-OFFT.h5")
+    model.load_weights("crispr_offt.h5")
 
     sgrna = input("\nInput the sgRNA sequence followed by the PAM sequence(23 base pair sequence):\n")
     dna = input("\nInput the DNA sequence:\n")
