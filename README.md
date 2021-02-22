@@ -22,7 +22,7 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 * crispr_offt_prediction_batch.py: CRISPR-OFFT code for batch prediction   
 
 ## Quickstart Guide: 
-CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the light-weight prediction tool by running the `crispr_on_prediction.py` script.
+CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the CRISPR-ONT prediction tool by running the `crispr_on_prediction.py` script.
 
 **Step 1:** the code asks for the sgRNA sequence followed by the PAM sequence.
 ```
@@ -34,7 +34,7 @@ ACTGCATGCATCGACGCCCGGGG
 Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:    
 0.70
 ```
-CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the light-weight prediction tool by running the `crispr_offt_prediction.py` script.  
+CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the CRISPR-OFFT prediction tool by running the `crispr_offt_prediction.py` script.  
 **Step 1:** the code asks for the sgRNA sequence followed by the PAM sequence.
 ```
 Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):  
