@@ -8,8 +8,7 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 * **[Anaconda](https://www.anaconda.com/distribution/#download-section) 3-5.2.0 or later**
 * **Python packages:**   
   [numpy](https://numpy.org/)   
-  [pandas](https://pandas.pydata.org/)   
-  [scikit-learn](https://scikit-learn.org/stable/)       
+  [pandas](https://pandas.pydata.org/)      
  * **[Keras](https://keras.io/)**    
  * **[Tensorflow](https://tensorflow.google.cn/)**   
 
