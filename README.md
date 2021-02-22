@@ -50,7 +50,7 @@ GCATGAGAAGAAGAGACATAGCC
 Predicting on test data:  
 The input sequence belongs to non-off-target with possibility 1.0000
 ```
-## Usage
+## Batch Mode Prediction
 #### Testing CRISPR-ONT with test set  
 * python crispr_ont_prediction_batch.py   
 
