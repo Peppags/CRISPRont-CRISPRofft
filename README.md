@@ -14,11 +14,6 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
  * **[Tensorflow](https://tensorflow.google.cn/)**   
 
 ## File Description:  
-* data/test_ont.csv: an exmpale for CRISPR-ONT prediction test.   
-* data/test_ont_batch.csv:  a file for   
-* data/test_offt.csv:  
-* data/encoded_test_offt.txt:  
-* data/test_offt.csv:  
 * crispr_ont.h5: the weights for the CRISPR-ONT model  
 * crispr_offt.h5: the weights for the CRISPR-OFFT model  
 * crispr_on_prediction.py: CRISPR-ONT code for single sgRNA prediction  
