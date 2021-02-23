@@ -57,14 +57,22 @@ GCATGAGAAGAAGAGACATAGCC
 Predicting on test data:  
 The input sequence belongs to non-off-target with possibility 1.0000
 ```
-## Batch Mode Prediction
-* Testing CRISPR-ONT with test set  
+## Batch Mode Prediction  
+* Testing CRISPR-ONT with test set
 ```
-python crispr_ont_prediction_batch.py   
+python crispr_ont_prediction_batch.py  <batch_filename> <output_file_name>
 ```
-* Testing CRISPR-OFFT with test set
+e.g.    
 ```
-python crispr_offt_prediction_batch.py  
+python crispr_ont_prediction_batch.py data/test_ont_batch.csv ont_output.csv
+```
+* Testing CRISPR-OFFT with test set  
+```
+python crispr_offt_prediction_batch.py <batch_filename> <output_file_name>    
+```
+e.g.    
+```
+python crispr_offt_prediction_batch.py data/test_offt_batch.csv offt_output.csv
 ```
 ## Docker  
 Alternatively, you can start a Docker container and exec into it.  
