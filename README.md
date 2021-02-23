@@ -37,7 +37,7 @@ ACTGCATGCATCGACGCCCGGGG
 Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:    
 0.70
 ```
-CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the CRISPR-OFFT prediction tool by running the `crispr_offt_prediction.py` script. 
+CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the CRISPR-OFFT prediction tool by running the `crispr_offt_prediction.py` script.   
 **Step 1:** run single off-target activity prediction as described next.
 ```
 python crispr_offt_prediction.py
