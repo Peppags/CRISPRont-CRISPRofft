@@ -90,6 +90,9 @@ TGACATCAATTATTATACATCGG,TGTCATCAATTATTAGGATTCGT
 ``` 
 ## Docker  
 Alternatively, you can start a Docker container and exec into it.  
-
+```
+sudo docker build -t crispr .  
+sudo docker run crispr  
+``` 
 ## Contact
 We looking forward to receiving any bug reports and suggestions. If you have any questions, feel free to E-mail me via: `gszhang(at)stu.edu.cn`
