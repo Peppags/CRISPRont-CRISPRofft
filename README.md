@@ -23,28 +23,36 @@ CRISPR-ONT and CRISPR-OFFT are attention-based convolution neural networks (CNNs
 ## Quickstart Guide: 
 CRISPR-ONT takes the DNA sequence of the guide and PAM sequence (23 base pair sequence) as the input. No other input is required for this model. Here we detail the instruction to use the CRISPR-ONT prediction tool by running the `crispr_on_prediction.py` script.
 
-**Step 1:** the code asks for the sgRNA sequence followed by the PAM sequence.
+**Step 1:** run single on-target activity prediction as described next.
+```
+python crispr_on_prediction.py
+```
+**Step 2:** the code asks for the sgRNA sequence followed by the PAM sequence.
 ```
 Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):  
 ACTGCATGCATCGACGCCCGGGG
 ```
-**Step 2:** the CRISPR-ONT outputs the predicted results.
+**Step 3:** the CRISPR-ONT outputs the predicted results.
 ```
 Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:    
 0.70
 ```
-CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the CRISPR-OFFT prediction tool by running the `crispr_offt_prediction.py` script.  
-**Step 1:** the code asks for the sgRNA sequence followed by the PAM sequence.
+CRISPR-OFFT takes the sgRNA-DNA sequence pair with lenght of 23 as the inputs. Here we detail the instruction to use the CRISPR-OFFT prediction tool by running the `crispr_offt_prediction.py` script. 
+**Step 1:** run single off-target activity prediction as described next.
+```
+python crispr_offt_prediction.py
+```
+**Step 2:** the code asks for the sgRNA sequence followed by the PAM sequence.
 ```
 Input the sgRNA sequence followed by the PAM sequence (23 base pair sequence):  
 AAATGAGAAGAAGAGGCACAGGG
 ```
-**Step 2:** the code asks for the DNA sequence.
+**Step 3:** the code asks for the DNA sequence.
 ```
 Input the DNA sequence:  
 GCATGAGAAGAAGAGACATAGCC
 ```
-**Step 3:** the CRISPR-OFFT outputs the predicted result.
+**Step 4:** the CRISPR-OFFT outputs the predicted result.
 ```
 Predicting on test data:  
 The input sequence belongs to non-off-target with possibility 1.0000
