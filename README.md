@@ -50,12 +50,14 @@ Predicting on test data:
 The input sequence belongs to non-off-target with possibility 1.0000
 ```
 ## Batch Mode Prediction
-#### Testing CRISPR-ONT with test set  
-* python crispr_ont_prediction_batch.py   
-
-#### Testing CRISPR-OFFT with test set
-* python crispr_offt_prediction_batch.py  
-
+* Testing CRISPR-ONT with test set  
+```
+python crispr_ont_prediction_batch.py   
+```
+* Testing CRISPR-OFFT with test set
+```
+python crispr_offt_prediction_batch.py  
+```
 ## Docker  
 Alternatively, you can start a Docker container and exec into it.  
 
