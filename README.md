@@ -66,6 +66,13 @@ e.g.
 ```
 python crispr_ont_prediction_batch.py data/test_ont_batch.csv ont_output.csv
 ```
+where batch_filename is a file with single-column index: sgRNA. eg.  
+```
+sgRNA  
+AAAAAAAAACTCCAAAACCCTGG  
+AAAAAACAACAAGAAGCACAAGG  
+AAAAAACACAAGCAAGACCGTGG  
+```
 * Testing CRISPR-OFFT with test set  
 ```
 python crispr_offt_prediction_batch.py <batch_filename> <output_file_name>    
@@ -73,6 +80,13 @@ python crispr_offt_prediction_batch.py <batch_filename> <output_file_name>
 e.g.    
 ```
 python crispr_offt_prediction_batch.py data/test_offt_batch.csv offt_output.csv
+```
+where batch_filename is a comma-delimited file with columns: sgRNA, DNA e.g.  
+```
+sgRNA,DNA  
+AAATGAGAAGAAGAGGCACAGGG,GCATGAGAAGAAGAGACATAGCC  
+AAATGAGAAGAAGAGGCACAGGG,GAAGAAGAAGAAGAGGAAGAGGA  
+TGACATCAATTATTATACATCGG,TGTCATCAATTATTAGGATTCGT  
 ```
 ## Docker  
 Alternatively, you can start a Docker container and exec into it.  
