@@ -56,6 +56,8 @@ The input sequence belongs to non-off-target with possibility 1.0000
 #### Testing CRISPR-OFFT with test set
 * python crispr_offt_prediction_batch.py  
 
+## Docker  
+Alternatively, you can start a Docker container and exec into it.  
 
 ## Contact
 We looking forward to receiving any bug reports and suggestions. If you have any questions, feel free to E-mail me via: `gszhang(at)stu.edu.cn`
