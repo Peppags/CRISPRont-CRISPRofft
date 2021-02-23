@@ -73,6 +73,11 @@ AAAAAAAAACTCCAAAACCCTGG
 AAAAAACAACAAGAAGCACAAGG  
 AAAAAACACAAGCAAGACCGTGG  
 ```
+| sgRNA        | 
+|  :------:   | 
+| AAAAAAAAACTCCAAAACCCTGG       | 
+| AAAAAACAACAAGAAGCACAAGG       | 
+| AAAAAACACAAGCAAGACCGTGG       | 
 * Testing CRISPR-OFFT with test set  
 ```
 python crispr_offt_prediction_batch.py <batch_filename> <output_file_name>    
