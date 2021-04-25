@@ -18,23 +18,6 @@ import numpy as np
 import pandas as pd
 
 
-def make_data(X):
-    vectorizer = text.Tokenizer(lower=False, split=" ", num_words=None, char_level=True)
-    vectorizer.fit_on_texts(X)
-    alphabet = "ATCG"
-    char_dict = {}
-    for i, char in enumerate(alphabet):
-        char_dict[char] = i + 1
-    word_index = {k: (v + 1) for k, v in char_dict.items()}
-    word_index["PAD"] = 0
-    word_index["START"] = 1
-    vectorizer.word_index = word_index.copy()
-    X = vectorizer.texts_to_sequences(X)
-    X = [[word_index["START"]] + [w for w in x] for x in X]
-    X = sequence.pad_sequences(X)
-    return X
-
-
 def attention(x, g, TIME_STEPS):
     input_dim = int(x.shape[2])
     x1 = K.permute_dimensions(x, (0, 2, 1))
@@ -102,29 +85,13 @@ if __name__ == '__main__':
 
     print("Loading weights for the models")
     model.load_weights("crispr_ont.h5")
+    
+    data_path = "data/test_ont.csv"
+    data = pd.read_csv(data_path)
+    x_test = make_data(data["sgRNA"])
+    y_pred = model.predict([x_test])
 
-    spacer_pam = input("\nInput the sgRNA sequence followed by the PAM sequence(23 base pair sequence):\n")
-    proceed_flag = 1
+    
 
-    if len(spacer_pam) < 23:
-        print("Sequence is too short.")
-        proceed_flag = 0
-
-    if spacer_pam.count('A') + spacer_pam.count('T') + spacer_pam.count('C') + spacer_pam.count('G') != len(spacer_pam):
-        print("Sequence should contains four characters A, T, C and G.")
-        proceed_flag = 0
-
-    if len(spacer_pam) > 23:
-        print("Sequence is too long.")
-        proceed_flag = 0
-
-    if proceed_flag == 1:
-        spacer_pam = pd.DataFrame(np.array(spacer_pam).reshape(-1))
-        data_path = "data/test_ont.csv"
-        spacer_pam.to_csv(data_path, index=False, sep=',', header=['sgRNA'])
-
-        data = pd.read_csv(data_path)
-        x_test = make_data(data["sgRNA"])
-
-        print("Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:")
-        y_pred = model.predict([x_test])
+    
+        
