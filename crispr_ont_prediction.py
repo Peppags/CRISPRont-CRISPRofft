@@ -127,6 +127,4 @@ if __name__ == '__main__':
         x_test = make_data(data["sgRNA"])
 
         print("Here is the cleavage efficiency that CRISPR-ONT predicts for this guide:")
-        y_pred = model.predict([x_test], batch_size=128, verbose=2)
-        print("%.2f" % y_pred[0][0])
-
+        y_pred = model.predict([x_test])
