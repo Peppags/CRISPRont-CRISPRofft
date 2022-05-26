@@ -10,5 +10,5 @@ setup(name='prediction',
       py_modules=['prediction.crispr_offt_prediction', 'prediction.crispr_offt_prediction_batch', 'prediction.crispr_on_prediction',
                    'prediction.crispr_ont_prediction_batch'],
       platform='Ubuntu 20.04.1 LTS',
-      install_requires=['numpy==1.19.5', 'pandas==1.1.5', 'tensorflow==2.2.0', 'keras==2.3.0'],
+      install_requires=['numpy==1.19.5', 'pandas==1.1.5', 'tensorflow==2.7.2', 'keras==2.3.0'],
       )
